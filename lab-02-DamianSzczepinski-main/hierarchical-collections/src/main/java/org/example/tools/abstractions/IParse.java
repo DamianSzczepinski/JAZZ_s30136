@@ -1,5 +1,6 @@
 package org.example.model.abstraction;
 
-public interface IParse<TResult> {
-    TResult parse(String input);
+@FunctionalInterface
+public interface IParse<T> {
+    T parse(String data);
 }
