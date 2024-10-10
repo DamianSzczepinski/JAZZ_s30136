@@ -2,16 +2,15 @@ package org.example.model.abstraction;
 
 import java.util.List;
 
-public interface IHaveHierarchicalStructure<TItem> {
+public interface IHaveHierarchicalStructure<T> {
 
-    void setParent(TItem geography);
+    void setParent(T parent);
 
-    List<TItem> getChildren();
+    List<T> getChildren();
 
-    TItem getParent();
+    T getParent();
 
     int getId();
 
     Integer getParentId();
-
 }
